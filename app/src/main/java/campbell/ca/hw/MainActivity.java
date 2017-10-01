@@ -129,9 +129,9 @@ public class MainActivity extends AppCompatActivity {
      * Button for image, launches activity that
      * has an intent-filter that responds to
      *  implicit intent:  view + geo uri
-     * @param v
+     * @param //v
      */
-    public void showMap(View v) {
+/*    public void showMap(View v) {
 
         String country = getResources().getString(R.string.country);
         Uri  geoLocation = Uri.parse("geo:0,0?q=" + Uri.encode(country));
@@ -145,5 +145,17 @@ public class MainActivity extends AppCompatActivity {
             result.setText(R.string.error_no_geo);
         }
 
+    }*/
+
+    public void openMapActivity(View view){
+        Intent map = new Intent(this,MapActivity.class);
+
+        String country = getResources().getString(R.string.country);
+        Log.d("INTDATA1",country);
+        map.putExtra("DATA1",country);
+
+        Log.d("Main Activity","Launching Map Activity");
+        startActivity(map);
     }
+
 }

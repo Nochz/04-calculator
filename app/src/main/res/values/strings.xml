@@ -8,4 +8,10 @@
     <string name="country">England</string>
     <string name="result_initial">The result will display here</string>
     <string name="error_no_geo">no action defined for geo intent</string>
+    <string name="loca">Location</string>
+    <string name="nodata">No Country</string>
+    <string name="map_search">Locate</string>
+    <string name="abt_country">About Country</string>
+    <string name="map_hint">Country</string>
+    <string name="error_no_search">no action defined for search intent</string>
 </resources>
